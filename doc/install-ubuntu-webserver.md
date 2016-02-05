@@ -6,6 +6,16 @@ Install Ubuntu web server
 
 This document is my personal memo for installing a web server on a vps with ubuntu.
 It assumes that you have a fresh new empty server with one linux distribution on it.
+
+The version I used was:
+
+```
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.3 LTS
+Release:	14.04
+Codename:	trusty
+```
+
  
  
 Summary
