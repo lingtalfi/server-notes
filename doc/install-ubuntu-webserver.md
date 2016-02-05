@@ -512,28 +512,29 @@ Note that it uses xip.io service, which allows you to play with a real domain na
 Then create the log files that were just defined in the virtual host configuration, 
 and apply the same permissions as other log files to your owns.
  
-``bash
+```bash
 touch /var/log/apache2/my-site.error.log
 touch /var/log/apache2/my-site.access.log
 chmod 640 /var/log/apache2/my-site.access.log
 chmod 640 /var/log/apache2/my-site.error.log
-``
+```
+
 
 Tip: to know the real value of the ${APACHE_LOG_DIR} variable, it's **/var/log/apache2** by default, but you can check it with:
-``bash
+```bash
 vim ../envvars
-``
+```
 
 Now you can activate your application and start apache
 
-``bash
+```bash
 a2ensite myapp
 service apache2 reload
-``
+```
 
 ### Configure mysql
 
-``bash
+```bash
 mysql -u root -p
 > show databases;
 
@@ -551,7 +552,7 @@ mysql -u root -p
 
 # when finished, you should flush to take the changes into account (although I believe it works without)
 > flush privileges;
-``
+```
 
 
 
