@@ -536,22 +536,25 @@ service apache2 reload
 
 ```bash
 mysql -u root -p
-> show databases;
+```
 
-
-# Create a database with the utf8mb4 character set, which is a little more complete than the mysql utf8
-> create database some_db default character set utf8mb4 collate utf8mb4_unicode_ci;
-
-# Create an user, and grant him the rights to administrate her database
-# use of the wildcard (%) means all hosts, including remote and local connexions
-> create user 'my_app_user'@'%' identified by 'my_password';
-> grant all privileges on some_db.* to 'my_app_user'@'%';
-
-# if you need to, use this to drop an user
-> drop user my_user@'%';
-
-# when finished, you should flush to take the changes into account (although I believe it works without)
-> flush privileges;
+```
+    > show databases;
+    
+    
+    # Create a database with the utf8mb4 character set, which is a little more complete than the mysql utf8
+    > create database some_db default character set utf8mb4 collate utf8mb4_unicode_ci;
+    
+    # Create an user, and grant him the rights to administrate her database
+    # use of the wildcard (%) means all hosts, including remote and local connexions
+    > create user 'my_app_user'@'%' identified by 'my_password';
+    > grant all privileges on some_db.* to 'my_app_user'@'%';
+    
+    # if you need to, use this to drop an user
+    > drop user my_user@'%';
+    
+    # when finished, you should flush to take the changes into account (although I believe it works without)
+    > flush privileges;
 ```
 
 
