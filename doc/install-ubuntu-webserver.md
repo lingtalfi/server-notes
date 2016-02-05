@@ -557,6 +557,9 @@ create database some_db default character set utf8mb4 collate utf8mb4_unicode_ci
 
 # Create an user, and grant him the rights to administrate her database
 # use of the wildcard (%) means all hosts, including remote and local connexions
+# I suggest that you create both accounts, one at localhost, and one for all hosts, see
+# the mysql docs for more details: http://dev.mysql.com/doc/refman/5.7/en/adding-users.html
+
 create user 'my_app_user'@'%' identified by 'my_password';
 grant all privileges on some_db.* to 'my_app_user'@'%';
 
