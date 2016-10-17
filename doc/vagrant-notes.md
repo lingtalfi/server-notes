@@ -16,6 +16,7 @@ Summary
 - [Where to find more vagrant boxes?](#where-to-find-more-vagrant-boxes)
 - [How to do shell provisioning?](#how-to-do-shell-provisioning)
 - [Rerun the provisioning](#rerun-the-provisioning)
+- [ping back-forth](#ping-back-forth)
 
 
 Nomenclature/Concepts
@@ -212,6 +213,40 @@ To rerun the provisioning only (much quicker), without restarting the server
 ```bash 
 vagrant provision
 ``` 
+
+
+
+Ping back & forth
+=====================
+
+To ping from the host to the guest, you can enable the private network in the VagrantFile.
+Uncomment this line:
+
+```ruby
+config.vm.network "private_network", ip: "192.168.33.10"
+```
+
+Then you can ping your guest using the 192.168.33.10 ip address.
+
+To ping from the guest to the host, first show the ip routes (inside the guest):
+
+```bash
+ip route show
+```
+
+and look for the line that starts with default.
+
+The ip address following the default keyword is the one that you can ping from the guest to access the host.
+
+
+
+
+Sources: 
+http://stackoverflow.com/questions/31037918/vagrant-ping-or-curl-from-guest-to-host-machine
+
+
+
+
 
 
 
