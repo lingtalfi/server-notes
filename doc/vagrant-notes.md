@@ -81,8 +81,18 @@ How to install an ubuntu machine?
 Add a new box to our collection of vagrant boxes.
 
 ```bash
-# vagrant box add $NAME $URL_OF_THE_BOX
+# First create a directory that will contain all your boxes, and cd into it
+mkdir /path/to/myboxes
+cd /path/to/myboxes
+
+
+
+# then add a box, either using this style:
 vagrant box add precise32 http://files.vagrantup.com/precise32.box
+
+# or this style (go here to choose your box: https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04)
+vagrant box add bento/ubuntu-16.04
+
 
 # add already added box
 # vagrant box add --force precise32 http://files.vagrantup.com/precise32.box
@@ -90,6 +100,25 @@ vagrant box add precise32 http://files.vagrantup.com/precise32.box
 
 # ubuntu
 # vagrant box add ubuntu14 https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box
+
+
+# once downloaded, you can create the Vagrantfile (and configure it if necessary)
+vagrant init
+
+# the last thing to do is connect via ssh
+vagrant ssh
+
+# when you're done if you want to preserve the state of your vm, exit from ssh, then:
+vagrant suspend
+
+# if you want, you can also exit using halt, but you will loose your setup:
+vagrant halt
+
+
+# next time you want to reconnect, do the following
+vagrant up
+vagrant ssh
+
 ```
 
 
