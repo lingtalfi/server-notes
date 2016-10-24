@@ -103,7 +103,7 @@ vagrant box add bento/ubuntu-16.04
 
 
 # once downloaded, you can create the Vagrantfile (and configure it if necessary)
-vagrant init
+vagrant init bento/ubuntu-16.04
 
 # the last thing to do is connect via ssh
 vagrant up
