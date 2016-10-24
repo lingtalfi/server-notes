@@ -106,6 +106,7 @@ vagrant box add bento/ubuntu-16.04
 vagrant init
 
 # the last thing to do is connect via ssh
+vagrant up
 vagrant ssh
 
 # when you're done if you want to preserve the state of your vm, exit from ssh, then:
