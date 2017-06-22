@@ -326,7 +326,7 @@ myapp=myapp:myapp:ZERj07Fe1
 
 
 tmpFile(php)*:
-sketch=/tmp/wwiz.last.sql
+myapp=/tmp/wwiz.last.sql
 
 
 
@@ -404,7 +404,7 @@ The -v option is for verbose (otherwise, you have absolutely no output)
 The second step is to use the so called "ling aliases".
 
 ```bash
-vim ~/.bashmanager
+vim ~/.bash_manager
 ```
 
 Put the following content in it:
