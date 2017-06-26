@@ -14,3 +14,4 @@ Some personal notes about vps
 - [nginx conf memo for simple php website](https://github.com/lingtalfi/server-notes/blob/master/doc/nginx.simple_php.conf)
 - [vagrant notes](https://github.com/lingtalfi/server-notes/blob/master/doc/vagrant-notes.md)
 - [create mysql account](https://github.com/lingtalfi/server-notes/blob/master/doc/create-mysql-account.md)
+- [https webserver from scratch - ubuntu 16.04 xenial](https://github.com/lingtalfi/server-notes/blob/master/doc/https-webserver-from-scratch.md)
