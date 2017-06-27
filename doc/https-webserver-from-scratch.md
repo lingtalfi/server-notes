@@ -350,4 +350,9 @@ Step Fifteen - Go further
 ----------------
 https://github.com/lingtalfi/server-notes/blob/master/doc/deploy-website.md
 
+### Transfer local dir to remote server
+
+scp -rp sourceDirName username@server:destDirName
+scp -rp cards vps:websites/leaderfit/leaderfit-images
+
 
