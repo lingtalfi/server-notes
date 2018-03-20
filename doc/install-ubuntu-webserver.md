@@ -36,6 +36,9 @@ Summary
  
  
  
+
+
+
  
 First connexion (access depends on the internet provider)
 ---------------------- 
@@ -44,6 +47,15 @@ ssh root@XXX.XXX.XXX.XXX
 # (type your password)
 ```
 
+
+
+Before anything else
+---------------------
+```bash
+# apt-get update
+# apt-get upgrade
+# apt-get install aptitude
+```
 
 
 First update
