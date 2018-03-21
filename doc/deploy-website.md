@@ -97,11 +97,12 @@ ssh komin
 
 (remote)
 
-On the remote server, create the application dir.
+On the remote server, create the application dir and go inside of it.
 
 ```bash
 cd /home/myuser
 mkdir myapp
+cd myapp
 ```
 
 Now let's create a non bare git repository, and do some magic git tricks.
