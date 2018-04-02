@@ -403,7 +403,10 @@ Notice the last three configuration lines
 And now what?
 -----------------
 
-Continue apache configuration:[ling apache ](https://github.com/lingtalfi/server-notes/blob/master/doc/ling-apache.md).
+- Continue apache configuration: [ling apache ](https://github.com/lingtalfi/server-notes/blob/master/doc/ling-apache.md).
+- Install [universe and kamille environment](https://github.com/lingtalfi/server-notes/blob/master/doc/install-universe-and-kamille.md)
+- install [myalias](https://github.com/lingtalfi/myaliases/blob/master/ling-server-aliases.sh)
+- install [cdd](https://github.com/lingtalfi/cdd)
 
 
 
