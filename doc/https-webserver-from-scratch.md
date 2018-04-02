@@ -133,6 +133,8 @@ ssh vps
 ```
 
 
+Now is a good time to [change ssh port](https://github.com/lingtalfi/server-notes/blob/master/doc/change-ssh-port.md) if you want.
+
 
 Step Seven — Set Up a Basic Firewall
 ------------------------
