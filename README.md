@@ -10,6 +10,8 @@ Some personal notes about vps
 
 - [https webserver from scratch - ubuntu 16.04 xenial](https://github.com/lingtalfi/server-notes/blob/master/doc/https-webserver-from-scratch.md)
 - [change ssh port](https://github.com/lingtalfi/server-notes/blob/master/doc/change-ssh-port.md)
+- [ling apache](https://github.com/lingtalfi/server-notes/blob/master/doc/ling-apache.md)
+- [install universe and kamille environment](https://github.com/lingtalfi/server-notes/blob/master/doc/install-universe-and-kamille.md)
 - [create mysql account](https://github.com/lingtalfi/server-notes/blob/master/doc/create-mysql-account.md)
 - [Install ubuntu web server on a fresh host](https://github.com/lingtalfi/server-notes/blob/master/doc/install-ubuntu-webserver.md)
 - [Deploy website: files and database](https://github.com/lingtalfi/server-notes/blob/master/doc/deploy-website.md)
