@@ -54,11 +54,50 @@ Tip: to replace all **ling-docs** instance by **mysite** (in the snippet below) 
 ```
 
 
-Third enable the virtual host
+Third: configure ssl
+-------------------
+
+Assuming you've already done the ssl steps from my [install https webserver from scratch](https://github.com/lingtalfi/server-notes/blob/master/doc/https-webserver-from-scratch.md) guide.
+
+
+```bash
+vim /etc/apache2/sites-available/ling-docs.ovh-ssl.conf
+
+
+# and put the following content in it
+<IfModule mod_ssl.c>
+	<VirtualHost *:443>
+		ServerName www.ling-docs.ovh
+		ServerAlias ling-docs.ovh *.ling-docs.ovh
+
+		ServerAdmin webmaster@localhost
+		DocumentRoot /myphp/ling-docs/www
+		<Directory "/myphp/ling-docs/www">
+		        Options FollowSymlinks MultiViews
+		        AllowOverride All 
+		        Require all granted
+		</Directory>		
+
+		ErrorLog /var/log/apache2/ling/all.log
+
+		SSLCertificateFile /etc/letsencrypt/live/ling-docs.ovh/fullchain.pem
+		SSLCertificateKeyFile /etc/letsencrypt/live/ling-docs.ovh/privkey.pem
+		Include /etc/letsencrypt/options-ssl-apache.conf
+	</VirtualHost>
+</IfModule>
+```
+
+
+
+
+
+Fourth enable the virtual hosts
 ---------------------------------
 
 ```bash
-a2ensite ling-docs.ovh
+a2dissite 000-default-le-ssl.conf
+a2ensite ling-docs.ovh.conf
+a2ensite ling-docs.ovh-ssl.conf
 service apache2 reload
 exit
 ```

@@ -414,6 +414,13 @@ flush privileges;
 ```
 
 
+Then reconnect as your new user and create an utf-8 database:
+
+```mysql
+CREATE DATABASE mydatabase CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+
 
 
 
