@@ -470,6 +470,35 @@ tools                /home/ling/tools
 ```
 
 
+#### now for root
+
+Also, do the same for root:
+
+
+```bash
+sudo su
+mkdir -p /root/tools; cd /root/tools; wget https://github.com/lingtalfi/myaliases/blob/master/ling-root-alias.sh; chmod u+x ling-root-alias.sh
+```
+
+
+Now let's register them in the .bashrc and also, comment the default "l" alias which conflicts with the "l" list bookmarks alias of cdd.
+
+```bash
+vim ~/.bashrc
+
+# add this at the end of the fie
+source ~/tools/ling-root-alias.sh
+```
+
+Now refresh
+
+```bash
+source ~/.bashrc
+```
+
+
+
+
 
 
 
