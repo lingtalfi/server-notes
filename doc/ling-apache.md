@@ -95,9 +95,14 @@ Fourth enable the virtual hosts
 ---------------------------------
 
 ```bash
+
 a2dissite 000-default-le-ssl.conf
+
 a2ensite ling-docs.ovh.conf
 a2ensite ling-docs.ovh-ssl.conf
+
+a2enmod headers
+
 service apache2 reload
 exit
 ```
