@@ -8,6 +8,21 @@ A quick reminder on how to install universe and kamille environment on a new ser
 
 
 
+
+
+Pre-steps
+===============
+Before we start, create a "/myphp" alias at the root. 
+Our kamille apps will use it.
+
+```bash
+mkdir -p ~/websites; sudo ln -s /home/ling/websites /myphp
+```
+
+
+
+
+
 Install universe
 ==================
 
@@ -36,13 +51,11 @@ Now import the whole universe
 --------------------------
 
 
-I like to put it in a websites directory, but do as you want...
+I like to put it in a "websites" directory, but do as you want...
 
 
 ```bash
-cd 
-mkdir -p websites/universe; cd websites/universe
-uni importall -f
+mkdir -p ~/websites/universe/planets; cd ~/websites/universe; uni importall -f
 ```
 
 

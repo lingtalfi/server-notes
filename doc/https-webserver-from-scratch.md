@@ -400,6 +400,54 @@ Notice the last three configuration lines
 
 
 
+Ling extra steps
+======================
+
+Now if you are me, you might want to do those extra steps.
+
+
+Extra step 1: let's install some tools
+-------------------------------------------
+
+
+#### cdd and server aliases
+
+First tool is cdd, a quick nav tool for bash.
+And server aliases are some aliases that improve my productivity on the command line.
+
+Let's import the scripts first.
+
+```bash
+cd 
+mkdir -p tools; cd tools; wget https://raw.githubusercontent.com/lingtalfi/cdd/master/cdd.sh; chmod u+x cdd.sh
+mkdir -p tools; cd tools; wget https://raw.githubusercontent.com/lingtalfi/myaliases/master/ling-server-aliases.sh; chmod u+x ling-server-aliases.sh
+```
+
+Now let's register them in the .bashrc and also, comment the default "l" alias which conflicts with the "l" list bookmarks alias of cdd.
+
+```bash
+vim ~/.bashrc
+
+# alias l='ls -CF'
+
+source ~/tools/cdd.sh
+source ~/tools/ling-server-aliases.sh
+```
+
+Now disconnect and reconnect to acknowledge the commented "l" alias.
+
+
+My cdd bookmarks are:
+
+```bash
+lee                  /home/ling/websites/leaderfit
+tools                /home/ling/tools
+```
+
+
+
+
+
 And now what?
 -----------------
 
