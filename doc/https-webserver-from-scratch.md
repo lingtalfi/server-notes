@@ -400,6 +400,24 @@ Notice the last three configuration lines
 
 
 
+Then create a mysql 5.7 account
+============================
+
+```bash
+mysql -uroot -p
+```
+
+```mysql
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON mydb.* TO 'someuser'@'somehost';
+flush privileges;
+```
+
+
+
+
+
+
 Ling extra steps
 ======================
 
@@ -453,8 +471,7 @@ And now what?
 
 - Continue apache configuration: [ling apache ](https://github.com/lingtalfi/server-notes/blob/master/doc/ling-apache.md).
 - Install [universe and kamille environment](https://github.com/lingtalfi/server-notes/blob/master/doc/install-universe-and-kamille.md)
-- install [myalias](https://github.com/lingtalfi/myaliases/blob/master/ling-server-aliases.sh)
-- install [cdd](https://github.com/lingtalfi/cdd)
+
 
 
 
