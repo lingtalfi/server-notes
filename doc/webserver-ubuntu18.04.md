@@ -5,6 +5,7 @@ Installation guide for a webserver on ubuntu 18.04 (from a mac)
 
 
 
+
 Things to replace:
 - my_user: the name of the user on the server with administrative rights (sudo)
 - my_mac_user: the name of your mac user account
@@ -26,6 +27,40 @@ The general strategy:
 	- using nginx as a webserver
 	- using apache as a webserver
 - customization (optional)
+
+
+
+Table of Contents
+=================
+
+  
+* [Preparation on local machine](#preparation-on-local-machine)
+* [Only allow one user to connect via ssh](#only-allow-one-user-to-connect-via-ssh)
+* [Configure the firewall](#configure-the-firewall)
+* [Add the services](#add-the-services)
+  * [fail2ban](#fail2ban)
+  * [Php](#php)
+     * [FPM (for nginx)](#fpm-for-nginx)
+        * [Important files](#important-files)
+     * [As an apache module](#as-an-apache-module)
+     * [Php extensions](#php-extensions)
+  * [Universe](#universe)
+  * [Composer](#composer)
+  * [Nginx](#nginx)
+     * [Important files](#important-files-1)
+     * [Create the main domain](#create-the-main-domain)
+     * [Configuring nginx server](#configuring-nginx-server)
+  * [Apache](#apache)
+  * [Let's encrypt](#lets-encrypt)
+     * [Configure nginx](#configure-nginx)
+  * [Mysql](#mysql)
+  * [Rkhunter](#rkhunter)
+  * [Chkrootkit](#chkrootkit)
+* [Customization](#customization)
+  * [To make vim understand nginx files](#to-make-vim-understand-nginx-files)
+      
+      
+      
 
 
 
