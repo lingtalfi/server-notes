@@ -8,6 +8,7 @@ Some personal notes about vps
 
 
 
+- [webserver - ubuntu 18.04](https://github.com/lingtalfi/server-notes/blob/master/doc/webserver-ubuntu18.04.md)
 - [https webserver from scratch - ubuntu 16.04 xenial](https://github.com/lingtalfi/server-notes/blob/master/doc/https-webserver-from-scratch.md)
 - [change ssh port](https://github.com/lingtalfi/server-notes/blob/master/doc/change-ssh-port.md)
 - [ling apache](https://github.com/lingtalfi/server-notes/blob/master/doc/ling-apache.md)
