@@ -797,6 +797,13 @@ Create an user (in mysql)
 - flush privileges;
 
 
+Start/Stop
+- service mysql start
+- service mysql stop
+- service mysql restart
+
+
+
 Rkhunter
 ----------
 
