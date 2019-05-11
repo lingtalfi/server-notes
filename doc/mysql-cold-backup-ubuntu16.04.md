@@ -14,6 +14,8 @@ New server environment
 ============
 The new server is clean.
 
+
+```txt
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -24,8 +26,10 @@ mysql> show databases;
 | sys                |
 +--------------------+
 4 rows in set (0.00 sec)
+```
 
- 
+
+```txt
 mysql> select Host, User from user;
 +-----------+------------------+
 | Host      | User             |
@@ -36,6 +40,7 @@ mysql> select Host, User from user;
 | localhost | root             |
 +-----------+------------------+
 4 rows in set (0.00 sec) 
+``` 
 
 
 
