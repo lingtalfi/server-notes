@@ -606,7 +606,7 @@ Apache
 
 
 Secure apache
-- vim /etc/apache2/apache2.conf
+- vim /etc/apache2/apache2.conf (a2enmod headers required)
 
 ```bash
 ServerSignature Off
@@ -621,10 +621,18 @@ Reload
 Activate modules
 - a2enmod rewrite
 - a2enmod userdir
+- a2enmod headers
 
 Reload
 - systemctl restart apache2
 - systemctl status apache2
+
+
+Check version
+- apache2 -v
+
+Enabled module list
+- apachectl -M
 
 
 
