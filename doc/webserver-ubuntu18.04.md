@@ -50,6 +50,7 @@ Table of Contents
      * [Important files](#important-files-1)
      * [Create the main domain](#create-the-main-domain)
      * [Configuring nginx server](#configuring-nginx-server)
+     * [More nginx configuration for php](#more-nginx-configuration-for-php)
   * [Apache](#apache)
   * [Let's encrypt](#lets-encrypt)
      * [Configure nginx](#configure-nginx)
@@ -594,6 +595,22 @@ http {
 Reload
 - nginx -t
 - systemctl reload nginx.service
+
+
+
+### More nginx configuration for php
+
+
+
+Redirect all non existing traffic to /index.php:
+
+
+```nginx
+location / {
+            try_files $uri $uri/ /index.php?$query_string;
+}
+```
+
 
 
 
