@@ -8,6 +8,7 @@ Some personal notes about vps
 
 
 
+- [nginx new https site - ubuntu 18.04](https://github.com/lingtalfi/server-notes/blob/master/doc/nginx-new-https-site.md)
 - [webserver - ubuntu 18.04](https://github.com/lingtalfi/server-notes/blob/master/doc/webserver-ubuntu18.04.md)
 - [mysql cold backup on ubuntu 16.04](https://github.com/lingtalfi/server-notes/blob/master/doc/mysql-cold-backup-ubuntu16.04.md)
 - [https webserver from scratch - ubuntu 16.04 xenial](https://github.com/lingtalfi/server-notes/blob/master/doc/https-webserver-from-scratch.md)
@@ -18,7 +19,6 @@ Some personal notes about vps
 - [Install ubuntu web server on a fresh host](https://github.com/lingtalfi/server-notes/blob/master/doc/install-ubuntu-webserver.md)
 - [Deploy website: files and database](https://github.com/lingtalfi/server-notes/blob/master/doc/deploy-website.md)
 - [git pull request memo](https://github.com/lingtalfi/server-notes/blob/master/doc/git-pull-request.md)
-- [nginx conf memo for simple php website](https://github.com/lingtalfi/server-notes/blob/master/doc/nginx.simple_php.conf)
 - [nginx conf memo for simple php website](https://github.com/lingtalfi/server-notes/blob/master/doc/nginx.simple_php.conf)
 - [my git local flow](https://github.com/lingtalfi/server-notes/blob/master/doc/my-git-local-flow.md)
 - [Apache Mysql Php, reinstall amp stack on local machine -- 2019-02-01](https://github.com/lingtalfi/server-notes/blob/master/doc/amp-2019-02-01.md)

@@ -253,6 +253,7 @@ iptables -A INPUT -p udp -m udp --sport 53 -j ACCEPT
 
 # apt-get
 iptables -A INPUT -p tcp --sport 80 -j ACCEPT
+iptables -A INPUT -p tcp --sport 443 -j ACCEPT
 
 
 
