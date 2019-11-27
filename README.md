@@ -22,3 +22,4 @@ Some personal notes about vps
 - [nginx conf memo for simple php website](https://github.com/lingtalfi/server-notes/blob/master/doc/nginx.simple_php.conf)
 - [my git local flow](https://github.com/lingtalfi/server-notes/blob/master/doc/my-git-local-flow.md)
 - [Apache Mysql Php, reinstall amp stack on local machine -- 2019-02-01](https://github.com/lingtalfi/server-notes/blob/master/doc/amp-2019-02-01.md)
+- [Apache ssl on local machine mac](https://github.com/lingtalfi/server-notes/blob/master/doc/apache-ssl-on-local-machine-mac.md)
